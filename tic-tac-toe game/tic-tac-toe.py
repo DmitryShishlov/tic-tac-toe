@@ -21,6 +21,8 @@ class GameXO:
             print(self.field)
             if self.game_wins():
                 return f'{self.game_wins()} wins'
+            elif turn >= 10:
+                return 'no one wins'
             else:
                 continue
 
